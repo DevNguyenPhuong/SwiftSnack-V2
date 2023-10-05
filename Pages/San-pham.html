@@ -1,160 +1,279 @@
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--styles-->
     <link href="./styles.css" rel="stylesheet" />
-    <link href="./fonts/themify-icons-font/themify-icons/themify-icons.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/25a6394adc.js" crossorigin="anonymous"></script>
+    <link
+      href="./fonts/themify-icons-font/themify-icons/themify-icons.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/25a6394adc.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="icon" href="/images/logo.png" type="image/x-icon" />
     <title>Swift Snack</title>
-</head>
+  </head>
 
-<body>
-    <div class="header">
-        <div class="logo">
-            <img src="/images/logo.png">
-        </div>
-        <div class="subnav">
-            <div class="order_now-btn">
-                <a class="order_now-btn-content">Đặt hàng ngay</a>
-                <i class="truck-icon fa-solid fa-truck-fast"></i>
+  <body>
+    <header class="header">
+      <a class="logo" href="../index.html">
+        <img src="/images/logo.png" />
+        <p>Swift snack</p>
+      </a>
+      <div class="subnav">
+        <ul class="subnav-list">
+          <li>
+            <a href="../Features/Gio-hang/Gio-hang.html">Đặt hàng ngay</a>
+          </li>
+          <li><a href="../Features/Dang-ki/Form-dang-ki.html">Đăng kí</a></li>
+          <li><button class="btn-login" href="#">Đăng nhập</button></li>
+          <ion-icon name="menu-outline" id="show-popup"></ion-icon>
+        </ul>
+        <div id="popup">
+          <div class="popup-header">
+            <img class="popup-icon" src="/images/logo.png" />
+            <button id="close-popup">
+              <ion-icon name="close-outline" class="icon-close"></ion-icon>
+            </button>
+          </div>
+          <ul class="categoryList">
+            <h3 class="line">Danh mục món ăn</h3>
+            <li><a href="#" class="line">Ưu Đãi &rarr;</a></li>
+            <li><a href="#" class="line">Món Mới &rarr;</a></li>
+            <li><a href="#" class="line">Combo 1 Người &rarr;</a></li>
+            <li><a href="#" class="line">Combo Nhóm &rarr;</a></li>
+            <li><a href="#" class="line">Gà rán - gà quay &rarr;</a></li>
+            <li><a href="#" class="line">Burger - Cơm - Mì Ý &rarr;</a></li>
+            <li><a href="#" class="line">Thức Ăn Nhẹ &rarr;</a></li>
+            <li>
+              <a href="#" class="line">Thức Uống & Tráng Miệng &rarr;</a>
+            </li>
+          </ul>
+
+          <ul class="categoryList">
+            <h3 class="line">Về Swift snack</h3>
+            <li>
+              <a href="#" class="line">Câu chuyện của chúng tôi &rarr;</a>
+            </li>
+            <li><a href="#" class="line">Tin khuyến mãi &rarr;</a></li>
+            <li><a href="#" class="line">Tin tức Swift snack &rarr;</a></li>
+            <li><a href="#" class="line">Tuyển dụng &rarr;</a></li>
+            <li><a href="#" class="line">Đặt tiệc Sinh nhật &rarr;</a></li>
+          </ul>
+
+          <ul class="categoryList">
+            <h3 class="line">Liên hệ Swift snack</h3>
+            <li><a href="#" class="line">Theo dõi đơn hàng &rarr;</a></li>
+            <li><a href="#" class="line">Liên hệ Swift snack &rarr;</a></li>
+          </ul>
+
+          <ul class="categoryList">
+            <h3 class="line">Chính sách</h3>
+            <li>
+              <a href="./chinh-sach-hoat-dong.html" class="line"
+                >Chính sách hoạt động &rarr;</a
+              >
+            </li>
+            <li>
+              <a href="./chinh-sach-va-quy-dinh.html" class="line"
+                >Chính sách và quy định &rarr;</a
+              >
+            </li>
+            <li>
+              <a href="./chinh-sach-bao-mat-thong-tin.html" class="line"
+                >Chính sách bảo mật thông tin &rarr;</a
+              >
+            </li>
+          </ul>
+
+          <div class="popup-footer">
+            <div class="icons">
+              <a class="icon" href="https://www.facebook.com/ThNhan16"
+                ><img src="/images/socials icons/facebook.png"
+              /></a>
+              <a class="icon" href="https://www.instagram.com/"
+                ><img src="/images/socials icons/instagram.png"
+              /></a>
+              <a class="icon" href="https://twitter.com/"
+                ><img src="/images/socials icons/twitter.png"
+              /></a>
+              <a class="icon" href="https://www.youtube.com"
+                ><img src="/images/socials icons/youtube.png"
+              /></a>
             </div>
-            <div class="login-btn">
-                <a class="login-btn-content">Đăng ký/Đăng nhập</a>
-                <i class="login-icon fa-solid fa-right-to-bracket"></i>
-                <div class="bulkhead"></div>
-                <i class="bars_list-icon fa-solid fa-bars"></i>
-            </div>
+
+            <p class="copyright">Copyright © 2023 Swift Snack Vietnam</p>
+          </div>
         </div>
-    </div>
+      </div>
+    </header>
 
     <div class="fixed-css">
-        <div class="topnav">
-            <a href="Combo-nhom.html">Combo - Nhóm</a>
-            <div class="bulkhead"></div>
-            <a href="Mon-chinh.html">Món chính</a>
-            <div class="bulkhead"></div>
-            <a href="Ga.html">Gà</a>
-            <div class="bulkhead"></div>
-            <a href="Thuc-an-nhe.html">Thức ăn nhẹ</a>
-            <div class="bulkhead"></div>
-            <a href="Thuc-uong-&-trang-mieng.html">Thức uống & tráng miệng</a>
-        </div>
+      <div class="topnav">
+        <a href="Combo-nhom.html">Combo - Nhóm</a>
+        <div class="bulkhead"></div>
+        <a href="Mon-chinh.html">Món chính</a>
+        <div class="bulkhead"></div>
+        <a href="Ga.html">Gà</a>
+        <div class="bulkhead"></div>
+        <a href="Thuc-an-nhe.html">Thức ăn nhẹ</a>
+        <div class="bulkhead"></div>
+        <a href="Thuc-uong-&-trang-mieng.html">Thức uống & tráng miệng</a>
+      </div>
     </div>
     <div class="container">
-
-        <div class="row">
-            <div class="leftcolumn">
-                <div class="san-pham-container">
-                    <div class="san-pham-images-container" title="2 miếng gà chiên sốt cà" target="_blank">
-                        <img class="images" src="/images/Fried-chicken/fried_chicken_1.png" />
-                    </div>
-                    <div class="san-pham-content-container">
-                        <div class="san-pham-content-title">
-                            2 miếng gà chiên sốt cà
-                        </div>
-                        <span class="san-pham-content-price">50.000₫</span>
-                        <div class="san-pham-content-description">2 miếng gà chiên sốt cà</div>
-                        <a href="#" class="san-pham-content-add-product-btn">Thêm</a>
-                    </div>
-                </div>
-
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="san-pham-container">
+            <div
+              class="san-pham-images-container"
+              title="2 miếng gà chiên sốt cà"
+              target="_blank"
+            >
+              <img
+                class="images"
+                src="/images/Fried-chicken/fried_chicken_1.png"
+              />
             </div>
-            <div class="rightcolumn">
-                <div class="card">
-                    <h2>Giới thiệu</h2>
-                    <iframe width="100%" height="230" src="https://youtube.com/embed/NLPuCclm5lA"></iframe>
-                    <p>Fast and Delicious</p>
-                </div>
-                <div class="card">
-                    <h2>Follow Me</h2>
-                    <div class="socials-icons">
-                        <a class="icon" href="https://www.facebook.com/ThNhan16"><img src="/images/socials icons/facebook.png"></a>
-                        <a class="icon" href="https://www.instagram.com/"><img src="/images/socials icons/instagram.png"></a>
-                        <a class="icon" href="https://twitter.com/"><img src="/images/socials icons/twitter.png"></a>
-                        <a class="icon" href="https://www.youtube.com"><img src="/images/socials icons/youtube.png"></a>
-
-                    </div>
-                    <!-- <img width="50%" src="images/social.jpg" /> -->
-                </div>
-                <div class="card contact-form">
-                    <h2>Liên hệ</h2>
-                    <div class="contact-info">
-                        <i class="ti-mobile"></i> Điện thoại: <a class="contact-tel" href="tel:0828122876">0828122876</a>
-                    </div>
-
-                    <div class="contact-info">
-                        <i class="ti-email"></i> Email: <a class="contact-email" href="mailto:2151120043@ut.edu.vn">2151120043@ut.edu.vn</a>
-                    </div>
-                    <button class="show-button" onclick="navigateToShow()">Show</button>
-                    <button class="order-button" onclick="navigateToOrder()">Đặt hàng</button>
-                </div>
-
-                <script>
-                    function navigateToShow() {
-                        window.open("/Bai1.html", "_blank");
-                    }
-
-                    function openLoginPage() {
-                        window.open("/Bai2.html", "_blank");
-                    }
-
-                    function navigateToOrder() {
-                        window.open("/Bai3.html", "_blank");
-                    }
-                </script>
+            <div class="san-pham-content-container">
+              <div class="san-pham-content-title">2 miếng gà chiên sốt cà</div>
+              <span class="san-pham-content-price">50.000₫</span>
+              <div class="san-pham-content-description">
+                2 miếng gà chiên sốt cà
+              </div>
+              <a href="#" class="san-pham-content-add-product-btn">Thêm</a>
             </div>
+          </div>
         </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>Giới thiệu</h2>
+            <iframe
+              width="100%"
+              height="230"
+              src="https://youtube.com/embed/NLPuCclm5lA"
+            ></iframe>
+            <p>Fast and Delicious</p>
+          </div>
+          <div class="card">
+            <h2>Follow Me</h2>
+            <div class="socials-icons">
+              <a class="icon" href="https://www.facebook.com/ThNhan16"
+                ><img src="/images/socials icons/facebook.png"
+              /></a>
+              <a class="icon" href="https://www.instagram.com/"
+                ><img src="/images/socials icons/instagram.png"
+              /></a>
+              <a class="icon" href="https://twitter.com/"
+                ><img src="/images/socials icons/twitter.png"
+              /></a>
+              <a class="icon" href="https://www.youtube.com"
+                ><img src="/images/socials icons/youtube.png"
+              /></a>
+            </div>
+            <!-- <img width="50%" src="images/social.jpg" /> -->
+          </div>
+          <div class="card contact-form">
+            <h2>Liên hệ</h2>
+            <div class="contact-info">
+              <i class="ti-mobile"></i> Điện thoại:
+              <a class="contact-tel" href="tel:0828122876">0828122876</a>
+            </div>
+
+            <div class="contact-info">
+              <i class="ti-email"></i> Email:
+              <a class="contact-email" href="mailto:2151120043@ut.edu.vn"
+                >2151120043@ut.edu.vn</a
+              >
+            </div>
+            <button class="show-button" onclick="navigateToShow()">Show</button>
+            <button class="order-button" onclick="navigateToOrder()">
+              Đặt hàng
+            </button>
+          </div>
+
+          <script>
+            function navigateToShow() {
+              window.open("/Bai1.html", "_blank");
+            }
+
+            function openLoginPage() {
+              window.open("/Bai2.html", "_blank");
+            }
+
+            function navigateToOrder() {
+              window.open("/Bai3.html", "_blank");
+            }
+          </script>
+        </div>
+      </div>
     </div>
 
     <footer>
-        <div class="footer_main">
-
-            <div class="footer_tag">
-                <h2>Location</h2>
-                <p>District 12, Ho Chi Minh City</p>
-                <p>Thu Duc District, Ho Chi Minh City</p>
-                <p>Hoan Kiem District, Ha Noi Capital</p>
-                <p>Thanh Xuan District, Ha Noi Capital</p>
-                <p>Dong Anh District, Ha Noi Capital</p>
-            </div>
-
-            <div class="footer_tag">
-                <h2>Contact</h2>
-                <div class="contact-info">
-                    <i class="ti-mobile"></i><a class="contact-tel" href="tel:0828122876">+84 828 122 876</a>
-                </div>
-                <div class="contact-info">
-                    <i class="ti-mobile"></i><a class="contact-tel" href="tel:0828122876">+84 828 122 876</a>
-                </div>
-                <div class="contact-info">
-                    <i class="ti-email"></i><a class="contact-email" href="mailto:2151120043@ut.edu.vn">2151120043@ut.edu.vn</a>
-                </div>
-                <div class="contact-info">
-                    <i class="ti-email"></i> <a class="contact-email" href="mailto:2151120043@ut.edu.vn">2151120043@ut.edu.vn</a>
-                </div>
-            </div>
-
-            <div class="footer_tag">
-                <h2>Our Service</h2>
-                <p>Fast Delivery</p>
-                <p>Easy Payments</p>
-                <p>24 x 7 Service</p>
-            </div>
-
-            <div class="footer_tag map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.3186233103756!2d106.61396077460434!3d10.863352657585228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752a1742c6b6b3%3A0x2314294db5addf4a!2zMS8zQiBUw7QgS8O9LCBUcnVuZyBN4bu5IFTDonksIFF14bqtbiAxMiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1692889130954!5m2!1sen!2s"
-                    width="100%" height="100%" style="border:0; padding-right: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+      <div class="footer_main">
+        <div class="footer_tag">
+          <h2>Location</h2>
+          <p>District 12, Ho Chi Minh City</p>
+          <p>Thu Duc District, Ho Chi Minh City</p>
+          <p>Hoan Kiem District, Ha Noi Capital</p>
+          <p>Thanh Xuan District, Ha Noi Capital</p>
+          <p>Dong Anh District, Ha Noi Capital</p>
         </div>
 
-        <p class="end">Design by<span style="text-transform:uppercase; font-weight:bold"><i class="fa-solid fa-face-grin"></i>Tran Thien Nhan & Tran Tien Dat</span></p>
+        <div class="footer_tag">
+          <h2>Contact</h2>
+          <div class="contact-info">
+            <i class="ti-mobile"></i
+            ><a class="contact-tel" href="tel:0828122876">+84 828 122 876</a>
+          </div>
+          <div class="contact-info">
+            <i class="ti-mobile"></i
+            ><a class="contact-tel" href="tel:0828122876">+84 828 122 876</a>
+          </div>
+          <div class="contact-info">
+            <i class="ti-email"></i
+            ><a class="contact-email" href="mailto:2151120043@ut.edu.vn"
+              >2151120043@ut.edu.vn</a
+            >
+          </div>
+          <div class="contact-info">
+            <i class="ti-email"></i>
+            <a class="contact-email" href="mailto:2151120043@ut.edu.vn"
+              >2151120043@ut.edu.vn</a
+            >
+          </div>
+        </div>
 
+        <div class="footer_tag">
+          <h2>Our Service</h2>
+          <p>Fast Delivery</p>
+          <p>Easy Payments</p>
+          <p>24 x 7 Service</p>
+        </div>
+
+        <div class="footer_tag map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.3186233103756!2d106.61396077460434!3d10.863352657585228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752a1742c6b6b3%3A0x2314294db5addf4a!2zMS8zQiBUw7QgS8O9LCBUcnVuZyBN4bu5IFTDonksIFF14bqtbiAxMiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1692889130954!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            style="border: 0; padding-right: 20px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <p class="end">
+        Design by<span style="text-transform: uppercase; font-weight: bold"
+          ><i class="fa-solid fa-face-grin"></i>Tran Thien Nhan & Tran Tien
+          Dat</span
+        >
+      </p>
     </footer>
-</body>
-<script  src="./index.js"></script>
-
+  </body>
+  <script src="./index.js"></script>
 </html>
