@@ -1,0 +1,473 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles.css" rel="stylesheet" />
+    <link rel="icon" href="///images/logo.png" type="image/x-icon" />
+    <title>Swift Snack</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="logo" href="../index.html">
+        <img src="/images/logo.png" />
+        <p>Swift snack</p>
+      </a>
+      <div class="subnav">
+        <ul class="subnav-list">
+          <li><a href="#">Đặt hàng ngay</a></li>
+          <li><a href="#">Đăng kí</a></li>
+          <li><button class="btn-login" href="#">Đăng nhập</button></li>
+          <ion-icon name="menu-outline" id="show-popup"></ion-icon>
+        </ul>
+        <div id="popup">
+          <div class="popup-header">
+            <img class="popup-icon" src="/images/logo.png" />
+            <button id="close-popup">
+              <ion-icon name="close-outline" class="icon-close"></ion-icon>
+            </button>
+          </div>
+          <ul class="categoryList">
+            <h3 class="line">Danh mục món ăn</h3>
+            <li><a href="#" class="line">Ưu Đãi &rarr;</a></li>
+            <li><a href="#" class="line">Món Mới &rarr;</a></li>
+            <li><a href="#" class="line">Combo 1 Người &rarr;</a></li>
+            <li><a href="#" class="line">Combo Nhóm &rarr;</a></li>
+            <li><a href="#" class="line">Gà rán - gà quay &rarr;</a></li>
+            <li><a href="#" class="line">Burger - Cơm - Mì Ý &rarr;</a></li>
+            <li><a href="#" class="line">Thức Ăn Nhẹ &rarr;</a></li>
+            <li>
+              <a href="#" class="line">Thức Uống & Tráng Miệng &rarr;</a>
+            </li>
+          </ul>
+
+          <ul class="categoryList">
+            <h3 class="line">Về Swift snack</h3>
+            <li>
+              <a href="#" class="line">Câu chuyện của chúng tôi &rarr;</a>
+            </li>
+            <li><a href="#" class="line">Tin khuyến mãi &rarr;</a></li>
+            <li><a href="#" class="line">Tin tức Swift snack &rarr;</a></li>
+            <li><a href="#" class="line">Tuyển dụng &rarr;</a></li>
+            <li><a href="#" class="line">Đặt tiệc Sinh nhật &rarr;</a></li>
+          </ul>
+
+          <ul class="categoryList">
+            <h3 class="line">Liên hệ Swift snack</h3>
+            <li><a href="#" class="line">Theo dõi đơn hàng &rarr;</a></li>
+            <li><a href="#" class="line">Liên hệ Swift snack &rarr;</a></li>
+          </ul>
+
+          <ul class="categoryList">
+            <h3 class="line">Chính sách</h3>
+            <li>
+              <a href="./chinh-sach-hoat-dong.html" class="line"
+                >Chính sách hoạt động &rarr;</a
+              >
+            </li>
+            <li>
+              <a href="./chinh-sach-va-quy-dinh.html" class="line"
+                >Chính sách và quy định &rarr;</a
+              >
+            </li>
+            <li>
+              <a href="./chinh-sach-bao-mat-thong-tin.html" class="line"
+                >Chính sách bảo mật thông tin &rarr;</a
+              >
+            </li>
+          </ul>
+
+          <div class="popup-footer">
+            <div class="icons">
+              <a class="icon" href="https://www.facebook.com/ThNhan16"
+                ><img src="/images/socials icons/facebook.png"
+              /></a>
+              <a class="icon" href="https://www.instagram.com/"
+                ><img src="/images/socials icons/instagram.png"
+              /></a>
+              <a class="icon" href="https://twitter.com/"
+                ><img src="/images/socials icons/twitter.png"
+              /></a>
+              <a class="icon" href="https://www.youtube.com"
+                ><img src="/images/socials icons/youtube.png"
+              /></a>
+            </div>
+
+            <p class="copyright">Copyright © 2023 Swift Snack Vietnam</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="fixed-css">
+      <div class="topnav">
+        <a href="Combo-nhom.html">Combo - Nhóm</a>
+        <div class="bulkhead"></div>
+        <a href="Mon-chinh.html">Món chính</a>
+        <div class="bulkhead"></div>
+        <a href="Ga.html">Gà</a>
+        <div class="bulkhead"></div>
+        <a href="Thuc-an-nhe.html">Thức ăn nhẹ</a>
+        <div class="bulkhead"></div>
+        <a href="Thuc-uong-&-trang-mieng.html">Thức uống & tráng miệng</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="leftcolumn-menu">
+            <h2>Danh mục</h2>
+            <ul class="food-category">
+              <li class="category-item"><a href="#">Gà rán</a></li>
+              <li class="category-item"><a href="#">Cơm</a></li>
+              <li class="category-item"><a href="#">Pizza</a></li>
+              <li class="category-item"><a href="#">Thức uống</a></li>
+              <li class="category-item"><a href="#">Đồ ăn nhẹ</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rightcolumn-meals">
+          <h1 class="meal-header">Khoai tây chiên</h1>
+          <div class="meal">
+            <img
+              src="../images/Thuc_an_nhe/Khoai tây chiên/khoaitaychien1.png"
+              class="meal-img"
+              alt="meal image"
+            />
+            <div class="meal-content">
+              <div class="meal-tags"></div>
+              <p class="meal-title">Đĩa Khoai tây chiên</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon
+                    name="pricetag-outline"
+                    class="meal-icon"
+                  ></ion-icon>
+                  <span><strong>1</strong> đĩa (M)</span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="star-outline" class="meal-icon"></ion-icon>
+                  <span><strong>4.9</strong> (537)</span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="card-outline" class="meal-icon"></ion-icon>
+                  <span>34.000 <strong>đ</strong></span>
+                </li>
+              </ul>
+            </div>
+
+            <a class="meal-button">Mua ngay</a>
+          </div>
+          <div class="meal">
+            <img
+              src="../images/Thuc_an_nhe/Khoai tây chiên/khoaitaychien2.png"
+              class="meal-img"
+              alt="meal image"
+            />
+            <div class="meal-content">
+              <div class="meal-tags"></div>
+              <p class="meal-title">Hộp Khoai tây chiên</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon
+                    name="pricetag-outline"
+                    class="meal-icon"
+                  ></ion-icon>
+                  <span><strong>1</strong> hộp (S)</span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="star-outline" class="meal-icon"></ion-icon>
+                  <span><strong>4.9</strong> (537)</span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="card-outline" class="meal-icon"></ion-icon>
+                  <span>18.000 <strong>đ</strong></span>
+                </li>
+              </ul>
+            </div>
+
+            <a class="meal-button">Mua ngay</a>
+          </div>
+          <div class="meal">
+            <img
+              src="../images/Thuc_an_nhe/Khoai tây chiên/khoaitaychien3.png"
+              class="meal-img"
+              alt="meal image"
+            />
+            <div class="meal-content">
+              <div class="meal-tags"></div>
+              <p class="meal-title">Đĩa khoai tây chiên</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon
+                    name="pricetag-outline"
+                    class="meal-icon"
+                  ></ion-icon>
+                  <span><strong>1</strong> đĩa (M)</span>
+                  <span><strong>1</strong> sốt cà</span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="star-outline" class="meal-icon"></ion-icon>
+                  <span><strong>4.9</strong> (537)</span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="card-outline" class="meal-icon"></ion-icon>
+                  <span>24.000 <strong>đ</strong></span>
+                </li>
+              </ul>
+            </div>
+
+            <a class="meal-button">Mua ngay</a>
+          </div>
+          <div class="meal">
+            <img
+              src="../images/Thuc_an_nhe/Khoai tây chiên/khoaitaychien4.png"
+              class="meal-img"
+              alt="meal image"
+            />
+            <div class="meal-content">
+              <div class="meal-tags"></div>
+              <p class="meal-title">Đĩa khoai tây chiên</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon
+                    name="pricetag-outline"
+                    class="meal-icon"
+                  ></ion-icon>
+                  <span><strong>1</strong> cái (M)</span>
+                  <span><strong>1</strong> sốt phô mai</span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="star-outline" class="meal-icon"></ion-icon>
+                  <span><strong>4.9</strong> (537)</span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="card-outline" class="meal-icon"></ion-icon>
+                  <span>24.000 <strong>đ</strong></span>
+                </li>
+              </ul>
+            </div>
+
+            <a class="meal-button">Mua ngay</a>
+          </div>
+          <h1 class="meal-header">Phô mai viên</h1>
+          <div class="meal">
+            <img
+              src="../images/Thuc_an_nhe/Phomai_vien/3_Mashies_Vegie.png"
+              class="meal-img"
+              alt="meal image"
+            />
+            <div class="meal-content">
+              <div class="meal-tags"></div>
+              <p class="meal-title">Mashies rau củ</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon
+                    name="pricetag-outline"
+                    class="meal-icon"
+                  ></ion-icon>
+                  <span><strong>3</strong> cái </span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="star-outline" class="meal-icon"></ion-icon>
+                  <span><strong>4.9</strong> (537)</span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="card-outline" class="meal-icon"></ion-icon>
+                  <span>28.000 <strong>đ</strong></span>
+                </li>
+              </ul>
+            </div>
+
+            <a class="meal-button">Mua ngay</a>
+          </div>
+          <div class="meal">
+            <img
+              src="../images/Thuc_an_nhe/Phomai_vien/5_Mashies_Vegie.png"
+              class="meal-img"
+              alt="meal image"
+            />
+            <div class="meal-content">
+              <div class="meal-tags"></div>
+              <p class="meal-title">Mashies rau củ</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon
+                    name="pricetag-outline"
+                    class="meal-icon"
+                  ></ion-icon>
+                  <span><strong>5</strong> cái </span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="star-outline" class="meal-icon"></ion-icon>
+                  <span><strong>4.9</strong> (537)</span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="card-outline" class="meal-icon"></ion-icon>
+                  <span>38.000 <strong>đ</strong></span>
+                </li>
+              </ul>
+            </div>
+
+            <a class="meal-button">Mua ngay</a>
+          </div>
+          <div class="meal">
+            <img
+              src="../images/Thuc_an_nhe/Phomai_vien/4_Chewy_Cheese.png"
+              class="meal-img"
+              alt="meal image"
+            />
+            <div class="meal-content">
+              <div class="meal-tags"></div>
+              <p class="meal-title">Phô mai viên</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon
+                    name="pricetag-outline"
+                    class="meal-icon"
+                  ></ion-icon>
+                  <span><strong>4</strong> cái</span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="star-outline" class="meal-icon"></ion-icon>
+                  <span><strong>4.9</strong> (537)</span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="card-outline" class="meal-icon"></ion-icon>
+                  <span>34.000 <strong>đ</strong></span>
+                </li>
+              </ul>
+            </div>
+
+            <a class="meal-button">Mua ngay</a>
+          </div>
+          <div class="meal">
+            <img
+              src="../images/Thuc_an_nhe/Phomai_vien/6_Chewy_Cheese.png"
+              class="meal-img"
+              alt="meal image"
+            />
+            <div class="meal-content">
+              <div class="meal-tags"></div>
+              <p class="meal-title">Phô mai viên</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon
+                    name="pricetag-outline"
+                    class="meal-icon"
+                  ></ion-icon>
+                  <span><strong>6</strong> cái</span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="star-outline" class="meal-icon"></ion-icon>
+                  <span><strong>4.9</strong> (537)</span>
+                </li>
+
+                <li class="meal-attribute">
+                  <ion-icon name="card-outline" class="meal-icon"></ion-icon>
+                  <span>44.000 <strong>đ</strong></span>
+                </li>
+              </ul>
+            </div>
+
+            <a class="meal-button">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer_main">
+        <div class="footer_tag">
+          <h2>Location</h2>
+          <p>District 12, Ho Chi Minh City</p>
+          <p>Thu Duc District, Ho Chi Minh City</p>
+          <p>Hoan Kiem District, Ha Noi Capital</p>
+          <p>Thanh Xuan District, Ha Noi Capital</p>
+          <p>Dong Anh District, Ha Noi Capital</p>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Contact</h2>
+          <div class="contact-info">
+            <i class="ti-mobile"></i>
+            <a class="contact-tel" href="tel:0828122876">+84 828 122 876</a>
+          </div>
+          <div class="contact-info">
+            <i class="ti-mobile"></i>
+            <a class="contact-tel" href="tel:0828122876">+84 828 122 876</a>
+          </div>
+          <div class="contact-info">
+            <i class="ti-mobile"></i>
+            <a class="contact-tel" href="tel:0828122876">+84 828 122 876</a>
+          </div>
+          <div class="contact-info">
+            <i class="ti-email"></i>
+            <a class="contact-email" href="mailto:2151120043@ut.edu.vn"
+              >2151120043@ut.edu.vn</a
+            >
+          </div>
+          <div class="contact-info">
+            <i class="ti-email"></i>
+            <a class="contact-email" href="mailto:2151120043@ut.edu.vn"
+              >2151120044@ut.edu.vn</a
+            >
+          </div>
+
+          <div class="contact-info">
+            <i class="ti-email"></i>
+            <a class="contact-email" href="mailto:2151120047@ut.edu.vn"
+              >2151120047@ut.edu.vn</a
+            >
+          </div>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Our Service</h2>
+          <p>Fast Delivery</p>
+          <p>Easy Payments</p>
+          <p>24 x 7 Service</p>
+        </div>
+
+        <div class="footer_tag map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.3186233103756!2d106.61396077460434!3d10.863352657585228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752a1742c6b6b3%3A0x2314294db5addf4a!2zMS8zQiBUw7QgS8O9LCBUcnVuZyBN4bu5IFTDonksIFF14bqtbiAxMiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1692889130954!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            style="border: 0; padding-right: 20px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <p class="end">
+        Design by<span
+          ><i class="fa-solid fa-face-grin"></i> swift snack team</span
+        >
+      </p>
+    </footer>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script src="../index.js"></script>
+</html>

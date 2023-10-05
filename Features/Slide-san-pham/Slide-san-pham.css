@@ -1,0 +1,102 @@
+.container {
+    background-image: url("/Assignment/Tainguyen/Anh/background.jpg");
+    background-size: cover;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px 1px #c06161;
+    border-style: solid rgb(12, 11, 11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+/* #slideshow-image {
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+#slideshow-controls {
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    margin: auto;
+}
+
+button {
+    border-radius: 60%;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: lightgoldenrodyellow;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+}
+
+.prev {
+    margin-right: 220px;
+    transform: translate(0px, -175px);
+}
+
+.prev:hover {
+    background-color: rgba(255, 255, 0, 0.825);
+}
+
+.next {
+    margin-left: 220px;
+    transform: translate(0px, -175px);
+}
+
+.next:hover {
+    background-color: yellow;
+}
+
+
+/* 
+#image-position {
+    color: rgba(0, 0, 0, 0.69);
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 900;
+} */
+
+h1 {
+    font-weight: 900;
+    text-align: center;
+    color: red;
+}
+
+.bai1_slider-container {
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.bai1_slider {
+    padding-left: 30%;
+}
+
+.aspect-ratio-169 {
+    /* margin-left: 18%; */
+    /* left: 300px; */
+}
+
+img {
+    height: 350px;
+    width: 428px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    /* margin-right: 20%; */
+}

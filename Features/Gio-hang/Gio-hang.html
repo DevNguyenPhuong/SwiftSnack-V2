@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Gio-hang.css" />
+    <link rel="icon" href="/images/logo.png" type="image/x-icon" />
+    <title>Giỏ hàng</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <table>
+        <caption>
+          Giỏ hàng
+          <select
+            name="mucGia"
+            class="select_list"
+            onchange="filter(this)"
+            placeholder="Mức giá"
+          >
+            <option value="0">Tất cả</option>
+            <option value="1">&#60;=100</option>
+            <option value="2">100-200</option>
+            <option value="3">200-500</option>
+            <option value="4">>=500</option>
+          </select>
+        </caption>
+        <thead>
+          <tr>
+            <th><input type="checkbox" id="chonhet" /></th>
+            <th>Hàng hóa</th>
+            <th>Đơn giá</th>
+            <th>Số Lượng</th>
+            <th>Thành Tiền</th>
+          </tr>
+        </thead>
+        <tbody id="listProducts">
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                class="chon"
+                checked
+                onchange="reverseAttribute(this)"
+              />
+            </td>
+            <td>
+              <img src="/images/Fried-chicken/fried_chicken_3_1mieng.png" />
+              <div>1 miếng gà rán</div>
+            </td>
+            <td>300</td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                class="quantity"
+                onchange="calculateTotal(this)"
+              />
+            </td>
+            <td class="thanhTien"></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                class="chon"
+                checked
+                onchange="reverseAttribute(this)"
+              />
+            </td>
+            <td>
+              <img src="/images/Fried-chicken/fried_chicken_4_2mieng.png" />
+              <div>2 miếng gà rán</div>
+            </td>
+            <td>400</td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                class="quantity"
+                onchange="calculateTotal(this)"
+              />
+            </td>
+            <td class="thanhTien"></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                class="chon"
+                checked
+                onchange="reverseAttribute(this)"
+              />
+            </td>
+            <td>
+              <img src="/images/Fried-chicken/fried_chicken_5_3mieng.png" />
+              <div>3 miếng gà rán</div>
+            </td>
+            <td>100</td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                class="quantity"
+                onchange="calculateTotal(this)"
+              />
+            </td>
+            <td class="thanhTien"></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                class="chon"
+                checked
+                onchange="reverseAttribute(this)"
+              />
+            </td>
+            <td>
+              <img src="/images/Fried-chicken/fried_chicken_6_3canh.png" />
+              <div>3 cánh gà Hot Winds</div>
+            </td>
+            <td>450</td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                class="quantity"
+                onchange="calculateTotal(this)"
+              />
+            </td>
+            <td class="thanhTien"></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                class="chon"
+                checked
+                onchange="reverseAttribute(this)"
+              />
+            </td>
+            <td>
+              <img src="/images/Fried-chicken/fried_chicken_7_5canh.png" />
+              <div>5 cánh gà Hot Winds</div>
+            </td>
+            <td>180</td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                class="quantity"
+                onchange="calculateTotal(this)"
+              />
+            </td>
+            <td class="thanhTien"></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                class="chon"
+                checked
+                onchange="reverseAttribute(this)"
+              />
+            </td>
+            <td>
+              <img src="/images/Fried-chicken/fried_chicken_1.png" />
+              <div>2 miếng gà rán sốt cà chua</div>
+            </td>
+            <td>600</td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                class="quantity"
+                onchange="calculateTotal(this)"
+              />
+            </td>
+            <td class="thanhTien"></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                class="chon"
+                checked
+                onchange="reverseAttribute(this)"
+              />
+            </td>
+            <td>
+              <img src="/images/Fried-chicken/fried_chicken_2.png" />
+              <div>1 miếng gà rán phô mai</div>
+            </td>
+            <td>90</td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                class="quantity"
+                onchange="calculateTotal(this)"
+              />
+            </td>
+            <td class="thanhTien"></td>
+          </tr>
+          <tr>
+            <td
+              colspan="4"
+              style="font-weight: bold; text-transform: uppercase"
+            >
+              Tổng
+            </td>
+            <td id="tong">0</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="thanh-toan-container">
+        <a href="./Form-thanh-toan.html" class="thanh-toan-btn">Thanh toán</a>
+        <!-- <input class="thanh-toan-btn" type="submit" value="Thanh toán" /> -->
+      </div>
+      <table id="cart"></table>
+    </div>
+  </body>
+  <script src="./Gio-hang.js"></script>
+</html>
