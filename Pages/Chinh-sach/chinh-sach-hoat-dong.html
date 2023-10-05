@@ -4,130 +4,102 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--styles-->
-    <link href="./styles.css" rel="stylesheet" />
+    <link href="../../styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="./chinh-sach-va-quy-dinh.css" />
-    <link
-      href="./fonts/themify-icons-font/themify-icons/themify-icons.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/25a6394adc.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="icon" href="/images/logo.png" type="image/x-icon" />
+    <link rel="icon" href="../../images/logo.png" type="image/x-icon" />
     <title>Chính sách hoạt động</title>
   </head>
   <body>
-    <div class="header">
-      <a class="logo" href="./index.html">
+    <header class="header">
+      <a class="logo" href="../../index.html">
         <img src="/images/logo.png" />
+        <p>Swift snack</p>
       </a>
       <div class="subnav">
-        <div class="order_now-btn">
-          <a href="/Gio-hang.html" class="order_now-btn-content"
-            >Đặt hàng ngay</a
-          >
-          <i class="truck-icon fa-solid fa-truck-fast"></i>
-        </div>
-        <div class="login-btn">
-          <a href="/Form-dang-ki.html" class="login-btn-content"
-            >Đăng ký/Đăng nhập</a
-          >
-          <i class="login-icon fa-solid fa-right-to-bracket"></i>
-          <div class="bulkhead"></div>
-          <i class="bars_list-icon fa-solid fa-bars" id="show-popup"> </i>
-          <div id="popup">
-            <div class="popup-header">
-              <img class="popup-icon" src="/images/logo.png" />
-              <button id="close-popup">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="100"
-                  height="100"
-                  viewBox="0 0 50 50"
-                  class="icon-close"
-                >
-                  <path
-                    d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
-                  ></path>
-                </svg>
-              </button>
+        <ul class="subnav-list">
+          <li><a href="#">Đặt hàng ngay</a></li>
+          <li><a href="#">Đăng kí</a></li>
+          <li><button class="btn-login" href="#">Đăng nhập</button></li>
+          <ion-icon name="menu-outline" id="show-popup"></ion-icon>
+        </ul>
+        <div id="popup">
+          <div class="popup-header">
+            <img class="popup-icon" src="/images/logo.png" />
+            <button id="close-popup">
+              <ion-icon name="close-outline" class="icon-close"></ion-icon>
+            </button>
+          </div>
+          <ul class="categoryList">
+            <h3 class="line">Danh mục món ăn</h3>
+            <li><a href="#" class="line">Ưu Đãi &rarr;</a></li>
+            <li><a href="#" class="line">Món Mới &rarr;</a></li>
+            <li><a href="#" class="line">Combo 1 Người &rarr;</a></li>
+            <li><a href="#" class="line">Combo Nhóm &rarr;</a></li>
+            <li><a href="#" class="line">Gà rán - gà quay &rarr;</a></li>
+            <li><a href="#" class="line">Burger - Cơm - Mì Ý &rarr;</a></li>
+            <li><a href="#" class="line">Thức Ăn Nhẹ &rarr;</a></li>
+            <li>
+              <a href="#" class="line">Thức Uống & Tráng Miệng &rarr;</a>
+            </li>
+          </ul>
+
+          <ul class="categoryList">
+            <h3 class="line">Về Swift snack</h3>
+            <li>
+              <a href="#" class="line">Câu chuyện của chúng tôi &rarr;</a>
+            </li>
+            <li><a href="#" class="line">Tin khuyến mãi &rarr;</a></li>
+            <li><a href="#" class="line">Tin tức Swift snack &rarr;</a></li>
+            <li><a href="#" class="line">Tuyển dụng &rarr;</a></li>
+            <li><a href="#" class="line">Đặt tiệc Sinh nhật &rarr;</a></li>
+          </ul>
+
+          <ul class="categoryList">
+            <h3 class="line">Liên hệ Swift snack</h3>
+            <li><a href="#" class="line">Theo dõi đơn hàng &rarr;</a></li>
+            <li><a href="#" class="line">Liên hệ Swift snack &rarr;</a></li>
+          </ul>
+
+          <ul class="categoryList">
+            <h3 class="line">Chính sách</h3>
+            <li>
+              <a href="./chinh-sach-hoat-dong.html" class="line"
+                >Chính sách hoạt động &rarr;</a
+              >
+            </li>
+            <li>
+              <a href="./chinh-sach-va-quy-dinh.html" class="line"
+                >Chính sách và quy định &rarr;</a
+              >
+            </li>
+            <li>
+              <a href="./chinh-sach-bao-mat-thong-tin.html" class="line"
+                >Chính sách bảo mật thông tin &rarr;</a
+              >
+            </li>
+          </ul>
+
+          <div class="popup-footer">
+            <div class="icons">
+              <a class="icon" href="https://www.facebook.com/ThNhan16"
+                ><img src="/images/socials icons/facebook.png"
+              /></a>
+              <a class="icon" href="https://www.instagram.com/"
+                ><img src="/images/socials icons/instagram.png"
+              /></a>
+              <a class="icon" href="https://twitter.com/"
+                ><img src="/images/socials icons/twitter.png"
+              /></a>
+              <a class="icon" href="https://www.youtube.com"
+                ><img src="/images/socials icons/youtube.png"
+              /></a>
             </div>
-            <ul class="categoryList">
-              <h3 class="line">Danh mục món ăn</h3>
-              <li><a href="#" class="line">Ưu Đãi &rarr;</a></li>
-              <li><a href="#" class="line">Món Mới &rarr;</a></li>
-              <li><a href="#" class="line">Combo 1 Người &rarr;</a></li>
-              <li><a href="#" class="line">Combo Nhóm &rarr;</a></li>
-              <li><a href="#" class="line">Gà rán - gà quay &rarr;</a></li>
-              <li><a href="#" class="line">Burger - Cơm - Mì Ý &rarr;</a></li>
-              <li><a href="#" class="line">Thức Ăn Nhẹ &rarr;</a></li>
-              <li>
-                <a href="#" class="line">Thức Uống & Tráng Miệng &rarr;</a>
-              </li>
-            </ul>
 
-            <ul class="categoryList">
-              <h3 class="line">Về Swift snack</h3>
-              <li>
-                <a href="#" class="line">Câu chuyện của chúng tôi &rarr;</a>
-              </li>
-              <li><a href="#" class="line">Tin khuyến mãi &rarr;</a></li>
-              <li><a href="#" class="line">Tin tức Swift snack &rarr;</a></li>
-              <li><a href="#" class="line">Tuyển dụng &rarr;</a></li>
-              <li><a href="#" class="line">Đặt tiệc Sinh nhật &rarr;</a></li>
-            </ul>
-
-            <ul class="categoryList">
-              <h3 class="line">Liên hệ Swift snack</h3>
-              <li><a href="#" class="line">Theo dõi đơn hàng &rarr;</a></li>
-              <li><a href="#" class="line">Liên hệ Swift snack &rarr;</a></li>
-            </ul>
-
-            <ul class="categoryList">
-              <h3 class="line">Chính sách</h3>
-              <li>
-                <a href="./chinh-sach-hoat-dong.html" class="line"
-                  >Chính sách hoạt động &rarr;</a
-                >
-              </li>
-              <li>
-                <a href="./chinh-sach-va-quy-dinh.html" class="line"
-                  >Chính sách và quy định &rarr;</a
-                >
-              </li>
-              <li>
-                <a href="./chinh-sach-bao-mat-thong-tin.html" class="line"
-                  >Chính sách bảo mật thông tin &rarr;</a
-                >
-              </li>
-            </ul>
-
-            <div class="popup-footer">
-              <div class="icons">
-                <a class="icon" href="https://www.facebook.com/ThNhan16"
-                  ><img src="/images/socials icons/facebook.png"
-                /></a>
-                <a class="icon" href="https://www.instagram.com/"
-                  ><img src="/images/socials icons/instagram.png"
-                /></a>
-                <a class="icon" href="https://twitter.com/"
-                  ><img src="/images/socials icons/twitter.png"
-                /></a>
-                <a class="icon" href="https://www.youtube.com"
-                  ><img src="/images/socials icons/youtube.png"
-                /></a>
-              </div>
-
-              <p class="copyright">Copyright © 2023 Swift Snack Vietnam</p>
-            </div>
+            <p class="copyright">Copyright © 2023 Swift Snack Vietnam</p>
           </div>
         </div>
       </div>
-    </div>
+    </header>
     <div>
       <div class="terms-condition">
         <section>
@@ -1514,5 +1486,9 @@
       </p>
     </footer>
   </body>
-  <script  src="./index.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script src="../../index.js"></script>
 </html>

@@ -103,6 +103,7 @@ buttonClose.addEventListener("click", () => {
 });
 
 // FIXED MENU
+const haveLeftCol = document.querySelector(".leftcolumn");
 const headerItem = document.querySelector(".section-header");
 const onlyHeader = document.querySelector(".header");
 const obs = new IntersectionObserver(
@@ -124,5 +125,7 @@ const obs = new IntersectionObserver(
   }
 );
 
-if (headerItem) obs.observe(headerItem);
-else obs.observe(onlyHeader);
+if (haveLeftCol) {
+  if (headerItem) obs.observe(headerItem);
+  else obs.observe(onlyHeader);
+}

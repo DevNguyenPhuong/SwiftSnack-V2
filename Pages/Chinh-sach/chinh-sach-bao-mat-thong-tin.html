@@ -4,494 +4,457 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--styles-->
-    <link href="./styles.css" rel="stylesheet" />
+    <link href="../../styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="./chinh-sach-va-quy-dinh.css" />
-    <link
-      href="./fonts/themify-icons-font/themify-icons/themify-icons.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/25a6394adc.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="icon" href="/images/logo.png" type="image/x-icon" />
+    <link rel="icon" href="../../images/logo.png" type="image/x-icon" />
     <title>Chính sách bảo mật thông tin</title>
   </head>
   <body>
-    <div class="header">
-      <a class="logo" href="./index.html">
+    <header class="header">
+      <a class="logo" href="../../index.html">
         <img src="/images/logo.png" />
+        <p>Swift snack</p>
       </a>
       <div class="subnav">
-        <div class="order_now-btn">
-          <a href="/Gio-hang.html" class="order_now-btn-content"
-            >Đặt hàng ngay</a
-          >
-          <i class="truck-icon fa-solid fa-truck-fast"></i>
-        </div>
-        <div class="login-btn">
-          <a href="/Form-dang-ki.html" class="login-btn-content"
-            >Đăng ký/Đăng nhập</a
-          >
-          <i class="login-icon fa-solid fa-right-to-bracket"></i>
-          <div class="bulkhead"></div>
-          <i class="bars_list-icon fa-solid fa-bars" id="show-popup"> </i>
-          <div id="popup">
-            <div class="popup-header">
-              <img class="popup-icon" src="/images/logo.png" />
-              <button id="close-popup">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="100"
-                  height="100"
-                  viewBox="0 0 50 50"
-                  class="icon-close"
-                >
-                  <path
-                    d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
-                  ></path>
-                </svg>
-              </button>
+        <ul class="subnav-list">
+          <li><a href="#">Đặt hàng ngay</a></li>
+          <li><a href="#">Đăng kí</a></li>
+          <li><button class="btn-login" href="#">Đăng nhập</button></li>
+          <ion-icon name="menu-outline" id="show-popup"></ion-icon>
+        </ul>
+        <div id="popup">
+          <div class="popup-header">
+            <img class="popup-icon" src="/images/logo.png" />
+            <button id="close-popup">
+              <ion-icon name="close-outline" class="icon-close"></ion-icon>
+            </button>
+          </div>
+          <ul class="categoryList">
+            <h3 class="line">Danh mục món ăn</h3>
+            <li><a href="#" class="line">Ưu Đãi &rarr;</a></li>
+            <li><a href="#" class="line">Món Mới &rarr;</a></li>
+            <li><a href="#" class="line">Combo 1 Người &rarr;</a></li>
+            <li><a href="#" class="line">Combo Nhóm &rarr;</a></li>
+            <li><a href="#" class="line">Gà rán - gà quay &rarr;</a></li>
+            <li><a href="#" class="line">Burger - Cơm - Mì Ý &rarr;</a></li>
+            <li><a href="#" class="line">Thức Ăn Nhẹ &rarr;</a></li>
+            <li>
+              <a href="#" class="line">Thức Uống & Tráng Miệng &rarr;</a>
+            </li>
+          </ul>
+
+          <ul class="categoryList">
+            <h3 class="line">Về Swift snack</h3>
+            <li>
+              <a href="#" class="line">Câu chuyện của chúng tôi &rarr;</a>
+            </li>
+            <li><a href="#" class="line">Tin khuyến mãi &rarr;</a></li>
+            <li><a href="#" class="line">Tin tức Swift snack &rarr;</a></li>
+            <li><a href="#" class="line">Tuyển dụng &rarr;</a></li>
+            <li><a href="#" class="line">Đặt tiệc Sinh nhật &rarr;</a></li>
+          </ul>
+
+          <ul class="categoryList">
+            <h3 class="line">Liên hệ Swift snack</h3>
+            <li><a href="#" class="line">Theo dõi đơn hàng &rarr;</a></li>
+            <li><a href="#" class="line">Liên hệ Swift snack &rarr;</a></li>
+          </ul>
+
+          <ul class="categoryList">
+            <h3 class="line">Chính sách</h3>
+            <li>
+              <a href="./chinh-sach-hoat-dong.html" class="line"
+                >Chính sách hoạt động &rarr;</a
+              >
+            </li>
+            <li>
+              <a href="./chinh-sach-va-quy-dinh.html" class="line"
+                >Chính sách và quy định &rarr;</a
+              >
+            </li>
+            <li>
+              <a href="./chinh-sach-bao-mat-thong-tin.html" class="line"
+                >Chính sách bảo mật thông tin &rarr;</a
+              >
+            </li>
+          </ul>
+
+          <div class="popup-footer">
+            <div class="icons">
+              <a class="icon" href="https://www.facebook.com/ThNhan16"
+                ><img src="/images/socials icons/facebook.png"
+              /></a>
+              <a class="icon" href="https://www.instagram.com/"
+                ><img src="/images/socials icons/instagram.png"
+              /></a>
+              <a class="icon" href="https://twitter.com/"
+                ><img src="/images/socials icons/twitter.png"
+              /></a>
+              <a class="icon" href="https://www.youtube.com"
+                ><img src="/images/socials icons/youtube.png"
+              /></a>
             </div>
-            <ul class="categoryList">
-              <h3 class="line">Danh mục món ăn</h3>
-              <li><a href="#" class="line">Ưu Đãi &rarr;</a></li>
-              <li><a href="#" class="line">Món Mới &rarr;</a></li>
-              <li><a href="#" class="line">Combo 1 Người &rarr;</a></li>
-              <li><a href="#" class="line">Combo Nhóm &rarr;</a></li>
-              <li><a href="#" class="line">Gà rán - gà quay &rarr;</a></li>
-              <li><a href="#" class="line">Burger - Cơm - Mì Ý &rarr;</a></li>
-              <li><a href="#" class="line">Thức Ăn Nhẹ &rarr;</a></li>
-              <li>
-                <a href="#" class="line">Thức Uống & Tráng Miệng &rarr;</a>
-              </li>
-            </ul>
 
-            <ul class="categoryList">
-              <h3 class="line">Về Swift snack</h3>
-              <li>
-                <a href="#" class="line">Câu chuyện của chúng tôi &rarr;</a>
-              </li>
-              <li><a href="#" class="line">Tin khuyến mãi &rarr;</a></li>
-              <li><a href="#" class="line">Tin tức Swift snack &rarr;</a></li>
-              <li><a href="#" class="line">Tuyển dụng &rarr;</a></li>
-              <li><a href="#" class="line">Đặt tiệc Sinh nhật &rarr;</a></li>
-            </ul>
-
-            <ul class="categoryList">
-              <h3 class="line">Liên hệ Swift snack</h3>
-              <li><a href="#" class="line">Theo dõi đơn hàng &rarr;</a></li>
-              <li><a href="#" class="line">Liên hệ Swift snack &rarr;</a></li>
-            </ul>
-
-            <ul class="categoryList">
-              <h3 class="line">Chính sách</h3>
-              <li>
-                <a href="./chinh-sach-hoat-dong.html" class="line"
-                  >Chính sách hoạt động &rarr;</a
-                >
-              </li>
-              <li>
-                <a href="./chinh-sach-va-quy-dinh.html" class="line"
-                  >Chính sách và quy định &rarr;</a
-                >
-              </li>
-              <li>
-                <a href="./chinh-sach-bao-mat-thong-tin.html" class="line"
-                  >Chính sách bảo mật thông tin &rarr;</a
-                >
-              </li>
-            </ul>
-
-            <div class="popup-footer">
-              <div class="icons">
-                <a class="icon" href="https://www.facebook.com/ThNhan16"
-                  ><img src="/images/socials icons/facebook.png"
-                /></a>
-                <a class="icon" href="https://www.instagram.com/"
-                  ><img src="/images/socials icons/instagram.png"
-                /></a>
-                <a class="icon" href="https://twitter.com/"
-                  ><img src="/images/socials icons/twitter.png"
-                /></a>
-                <a class="icon" href="https://www.youtube.com"
-                  ><img src="/images/socials icons/youtube.png"
-                /></a>
-              </div>
-
-              <p class="copyright">Copyright © 2023 Swift Snack Vietnam</p>
-            </div>
+            <p class="copyright">Copyright © 2023 Swift Snack Vietnam</p>
           </div>
         </div>
       </div>
-    </div>
+    </header>
 
-    
-      <section class="terms-condition">
-        <div>
-          <p>
-            <strong>Política de cookies y anuncios</strong>
-          </p>
-          <p>
-            <em>Modificada por última vez el: 16 de junio de 2020</em>
-          </p>
-          <p><em>&nbsp;</em></p>
-          <p>
-            <strong>Utilizamos tecnologías de seguimiento&nbsp;</strong>
-          </p>
-          <p>&nbsp;</p>
-          <p>
-            Cuando visita nuestros Sitios y accede o utiliza nuestro Servicio,
-            lee nuestros correos electrónicos o interactúa con nosotros de otro
-            modo a través de un ordenador o dispositivo móvil, nosotros y
-            nuestros socios externos recopilamos automáticamente información
-            sobre cómo accede y utiliza el Servicio e información sobre el
-            dispositivo que utiliza para acceder al Servicio.&nbsp;
-          </p>
-          <p>&nbsp;</p>
-          <p>
-            Esta información nos permite mejorar su experiencia de cliente. Por
-            ejemplo, nosotros o terceros con los que trabajamos utilizamos
-            tecnologías de seguimiento:
-          </p>
-          <ul>
-            <li>Para reconocer a clientes nuevos o actuales.</li>
-            <li>
-              Para almacenar su contraseña si está registrado en nuestros
-              Sitios.
-            </li>
-            <li>Para mejorar nuestro Servicio.</li>
-            <li>
-              Para ofrecerle publicidad basada en intereses o dirigida (consulte
-              a continuación para obtener más información sobre la publicidad
-              basada en intereses).
-            </li>
-            <li>
-              Para observar sus comportamientos y actividades de navegación en
-              el transcurso del tiempo en múltiples sitios web u otras
-              plataformas.
-            </li>
-            <li>
-              Comprender mejor los intereses de nuestros clientes y visitantes
-              de los Sitios.
-            </li>
-          </ul>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>
-            <strong
-              >Recopilación de datos de terceros y publicidad basada en
-              intereses</strong
-            >
-          </p>
-          <p>
-            Participamos en publicidad basada en intereses y utilizamos empresas
-            de publicidad de terceros para ofrecerle anuncios dirigidos basados
-            en su historial de navegación. Permitimos que redes publicitarias en
-            línea de terceros, empresas de redes sociales y otros servicios de
-            terceros recopilen información sobre su uso de nuestros Sitios,
-            incluidas nuestras aplicaciones móviles, con el tiempo para que
-            puedan reproducir o mostrar anuncios en nuestro Servicio, en otros
-            sitios web, aplicaciones o servicios que pueda utilizar y en otros
-            dispositivos que pueda utilizar. Por lo general, aunque no siempre,
-            la información utilizada para la publicidad basada en intereses se
-            recopila a través de tecnologías de seguimiento, como cookies,
-            objetos flash, balizas web, secuencias de comandos incrustadas, SDK
-            para móviles, tecnologías de identificación de ubicación, y
-            tecnología similar (colectivamente, “tecnologías de seguimiento”),
-            que reconocen el dispositivo que está utilizando y recopilan
-            información, incluida información de secuencias de clics, tipo de
-            navegador, fecha y hora en que visitó el sitio, el ID de dispositivo
-            o AdID, la geolocalización precisa y otra información. Podemos
-            compartir un identificador de cuenta común (como una dirección de
-            correo electrónico o un ID de usuario con
-            <em>hash</em>) con nuestros socios publicitarios externos para
-            ayudar a identificarle a través de dispositivos. Nosotros y nuestros
-            socios externos utilizamos esta información para hacer que los
-            anuncios que ve en línea sean más pertinentes para sus intereses,
-            así como para proporcionar servicios relacionados con la publicidad
-            como informes, atribución, análisis e investigación de mercado.
-            También podemos utilizar servicios proporcionados por terceros (como
-            plataformas de redes sociales) para ofrecerle anuncios dirigidos a
-            usted y a otras personas en dichas plataformas. Podemos hacerlo
-            proporcionando una versión con <em>hash</em> de su dirección de
-            correo electrónico u otra información al proveedor de la plataforma.
-            Consulte Sus opciones de publicidad a continuación para obtener más
-            información sobre la publicidad basada en intereses.
-          </p>
-          <p>&nbsp;</p>
-          <p>
-            <strong>Los widgets de redes sociales y publicidad&nbsp;</strong>
-          </p>
-          <p>
-            Nuestro Servicio puede incluir funciones de redes sociales, como el
-            botón Me gusta de Facebook, LinkedIn, Snapchat, Instagram, Twitter u
-            otros widgets. Estas empresas de redes sociales pueden reconocerlo y
-            recopilar información sobre su visita a nuestro Servicio, y pueden
-            dejar una cookie o emplear otras tecnologías de seguimiento. Sus
-            interacciones con estas funciones se rigen por las políticas de
-            privacidad de dichas empresas.&nbsp;
-          </p>
-          <p>
-            Le mostramos publicidad dirigida a usted a través de plataformas de
-            redes sociales, como Facebook, Twitter, Instagram, LinkedIn y otros
-            foros de redes sociales. Estas empresas tienen programas
-            publicitarios basados en intereses que nos permiten dirigir anuncios
-            a usuarios que han mostrado interés en nuestro Servicio mientras
-            esos usuarios están en la plataforma de redes sociales, o a grupos
-            de otros usuarios que comparten características similares, como
-            intereses comerciales probables y datos demográficos. Podemos
-            compartir un identificador único, como un ID de usuario o una
-            dirección de correo electrónico con
-            <em>hash</em>, con estos proveedores de plataformas o pueden
-            recopilar información de los visitantes de nuestro Sitio web a
-            través de un píxel propio, a fin de enviarle publicidad dirigida a
-            usted o a un público personalizado en la plataforma de redes
-            sociales. Estos anuncios se rigen por las políticas de privacidad de
-            las empresas de redes sociales que los proporcionan. Si no desea
-            recibir anuncios dirigidos en sus redes sociales, puede que pueda
-            ajustar sus preferencias de publicidad a través de sus ajustes en
-            esas redes. Puede obtener más información sobre las preferencias de
-            publicidad haciendo clic en los enlaces que se proporcionan a
-            continuación. Tenga en cuenta que estos enlaces se proporcionan
-            únicamente para su comodidad y no controlamos el contenido o las
-            funciones que puedan estar disponibles en estos servicios de
-            terceros.&nbsp;
-          </p>
-          <ol>
-            <li>
-              <strong>Facebook.</strong> Para obtener más información sobre sus
-              preferencias de publicidad en las empresas de Facebook, haga
-              clic&nbsp;<a
-                href="https://www.facebook.com/help/109378269482053"
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-                >aquí</a
-              >.
-            </li>
-            <li>
-              <strong>Twitter.</strong> Para obtener más información sobre los
-              controles de privacidad para anuncios personalizados en Twitter,
-              haga clic&nbsp;<a
-                href="https://help.twitter.com/en/safety-and-security/privacy-controls-for-tailored-ads"
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-                >aquí</a
-              >.
-            </li>
-            <li>
-              <strong>LinkedIn.</strong> Para obtener más información sobre las
-              preferencias de publicidad en LinkedIn, haga clic&nbsp;<a
-                href="https://www.linkedin.com/psettings/advertising"
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-                >aquí</a
-              >.
-            </li>
-          </ol>
-          <p><strong>Enlace entre dispositivos</strong></p>
-          <p>
-            Nosotros, o nuestros socios externos, podemos vincular sus
-            dispositivos para que el contenido que vea en un dispositivo pueda
-            generar publicidad pertinente en otro dispositivo. Lo hacemos
-            recopilando información sobre cada dispositivo que utiliza cuando
-            inicia sesión en nuestro Servicio. También podemos trabajar con
-            socios externos que empleen tecnologías de seguimiento, o la
-            aplicación de herramientas de modelado estadístico, para determinar
-            si dos o más dispositivos están vinculados a un único usuario u
-            hogar. Podemos compartir un identificador de cuenta común (como una
-            dirección de correo electrónico o un ID de usuario) con socios
-            publicitarios externos para ayudar a reconocerlo entre dispositivos.
-            Nosotros, y nuestros socios, podemos utilizar esta vinculación entre
-            dispositivos para ofrecerle publicidad basada en intereses y otro
-            contenido personalizado en sus dispositivos, para realizar análisis
-            y para medir el rendimiento de nuestras campañas publicitarias.
-          </p>
-          <p><strong>Socios externos</strong>&nbsp;</p>
-          <p>
-            A continuación aparece una muestra de socios de servicios externos
-            con los que trabajamos para proporcionar servicios de vinculación o
-            publicidad entre dispositivos. Nos esforzaremos por actualizar esta
-            lista si o cuando trabajemos con nuevos socios que le ofrezcan
-            opciones de recopilación de su información, pero a medida que los
-            socios cambien y haya disponibles nuevas tecnologías, es probable
-            que esta lista cambie con el tiempo y que no siempre refleje
-            nuestros socios actuales.
-          </p>
-          <ul>
-            <li>
-              <u>Google Analytics y publicidad</u>. Utilizamos Google Analytics
-              para reconocerlo y vincular los dispositivos que utiliza cuando
-              visita nuestro Sitio o Servicio en su navegador o dispositivo
-              móvil, inicia sesión en su cuenta en nuestro Servicio o interactúa
-              con nosotros de cualquier otro modo. Compartimos un identificador
-              único, como un ID de usuario o una dirección de correo electrónico
-              con <em>hash</em>, con Google para facilitar el servicio. Google
-              Analytics nos permite comprender mejor cómo interactúan nuestros
-              usuarios con nuestro Servicio y personalizar los anuncios y
-              contenido para usted. Para obtener información sobre cómo recopila
-              y trata datos Google Analytics, así como sobre cómo puede
-              controlar la información enviada a Google, revise el sitio de
-              Google “Cómo utiliza Google los datos cuando utiliza los sitios o
-              aplicaciones de nuestros socios” ubicado
-              en&nbsp;www.google.com/policies/privacy/partners/. Puede obtener
-              más información sobre las cancelaciones de suscripción disponibles
-              actualmente de Google Analytics, incluido Google Analytics Browser
-              Ad-On aquí&nbsp;<a
-                href="https://tools.google.com/dlpage/gaoptout/"
-                rel="nofollow"
-                >https://tools.google.com/dlpage/gaoptout/</a
-              >.
-            </li>
-            <li>
-              También podemos utilizar ciertas formas de publicidad en pantalla
-              y otras funciones avanzadas a través de Google Analytics, como
-              Remarketing con Google Analytics, Google Display Network
-              Impression Reporting, DoubleClick Campaign Manager Integration y
-              Google Analytics Demographics and Interest Reporting. Estas
-              funciones nos permiten utilizar cookies de origen (como la cookie
-              de Google Analytics) y cookies de terceros (como la cookie de
-              publicidad de DoubleClick) u otras cookies de terceros juntas para
-              informar, optimizar y mostrar anuncios basados en sus visitas
-              anteriores al Servicio. Usted puede controlar sus preferencias de
-              publicidad o excluirse de ciertos productos de publicidad de
-              Google visitando el Administrador de preferencias de publicidad de
-              Google, disponible actualmente en&nbsp;<a
-                href="https://google.com/ads/preferences%20"
-                rel="nofollow"
-                >https://google.com/ads/preferences</a
-              >, o visitando los recursos en línea de NAI en&nbsp;<a
-                href="http://www.networkadvertising.org/choices"
-                rel="nofollow"
-                >http://www.networkadvertising.org/choices</a
-              >.&nbsp;
-            </li>
-            <li>
-              Podemos utilizar servicios de coincidencia de datos como LiveRamp
-              para ayudarnos a medir la eficacia y el análisis de la publicidad
-              y para crear datos con fines publicitarios personalizados. Puede
-              averiguar cómo darse de baja de los servicios de LiveRamp
-              visitando&nbsp;<a
-                href="https://liveramp.com/opt_out."
-                rel="nofollow"
-                >https://liveramp.com/opt_out.</a
-              >&nbsp;
-            </li>
-            <li>
-              Podemos utilizar un socio externo Rokt para proporcionar ofertas
-              personalizadas de otras marcas en nuestros sitios. Puede obtener
-              más información sobre Rokt y aprender a darse de baja de las
-              ofertas personalizadas de la marca Rokt visitando&nbsp;<a
-                href="http://www.rokt.com/privacy-policy"
-                rel="nofollow"
-                >www.rokt.com/privacy-policy</a
-              >.&nbsp;
-            </li>
-          </ul>
-        </div>
-      </section>
-     
-    <section class="terms-condition" >
-        <h2 >Sus opciones de publicidad</h2>
-        <div >
-          <p>
-            <strong
-              >Control de cookies, tecnologías de seguimiento y cookies
-              Flash.</strong
-            >
-            La mayoría de los navegadores le permiten ajustar la configuración
-            de su navegador para: (i) notificarle cuando recibe una cookie, lo
-            que le permite elegir si aceptarla o no; (ii) deshabilitar las
-            cookies existentes; o (iii) configurar su navegador para rechazar
-            automáticamente las cookies.&nbsp;
-          </p>
-          <p>
-            El bloqueo o eliminación de cookies puede afectar negativamente a su
-            experiencia de uso del Servicio, ya que algunas funciones y
-            servicios de nuestro Servicio pueden no funcionar correctamente.
-            Según el dispositivo móvil y sistema operativo que tenga, es posible
-            que no pueda eliminar o bloquear todas las tecnologías de
-            seguimiento. Puede configurar sus opciones de correo electrónico
-            para evitar la descarga automática de imágenes que puedan contener
-            tecnologías que nos permitan saber si ha visto o interactuado con
-            nuestros correos electrónicos.
-          </p>
-          <p>
-            La eliminación de cookies no elimina objetos de almacenamiento local
-            (Local Storage Objects, LSO) como objetos Flash y HTML5. Puede
-            obtener más información sobre los objetos Flash, incluido cómo
-            gestionar la configuración de privacidad y almacenamiento de las
-            cookies Flash, en el sitio web de Adobe o haciendo clic&nbsp;<a
-              href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html"
-              rel="nofollow"
+    <section class="terms-condition">
+      <div>
+        <p>
+          <strong>Política de cookies y anuncios</strong>
+        </p>
+        <p>
+          <em>Modificada por última vez el: 16 de junio de 2020</em>
+        </p>
+        <p><em>&nbsp;</em></p>
+        <p>
+          <strong>Utilizamos tecnologías de seguimiento&nbsp;</strong>
+        </p>
+        <p>&nbsp;</p>
+        <p>
+          Cuando visita nuestros Sitios y accede o utiliza nuestro Servicio, lee
+          nuestros correos electrónicos o interactúa con nosotros de otro modo a
+          través de un ordenador o dispositivo móvil, nosotros y nuestros socios
+          externos recopilamos automáticamente información sobre cómo accede y
+          utiliza el Servicio e información sobre el dispositivo que utiliza
+          para acceder al Servicio.&nbsp;
+        </p>
+        <p>&nbsp;</p>
+        <p>
+          Esta información nos permite mejorar su experiencia de cliente. Por
+          ejemplo, nosotros o terceros con los que trabajamos utilizamos
+          tecnologías de seguimiento:
+        </p>
+        <ul>
+          <li>Para reconocer a clientes nuevos o actuales.</li>
+          <li>
+            Para almacenar su contraseña si está registrado en nuestros Sitios.
+          </li>
+          <li>Para mejorar nuestro Servicio.</li>
+          <li>
+            Para ofrecerle publicidad basada en intereses o dirigida (consulte a
+            continuación para obtener más información sobre la publicidad basada
+            en intereses).
+          </li>
+          <li>
+            Para observar sus comportamientos y actividades de navegación en el
+            transcurso del tiempo en múltiples sitios web u otras plataformas.
+          </li>
+          <li>
+            Comprender mejor los intereses de nuestros clientes y visitantes de
+            los Sitios.
+          </li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>
+          <strong
+            >Recopilación de datos de terceros y publicidad basada en
+            intereses</strong
+          >
+        </p>
+        <p>
+          Participamos en publicidad basada en intereses y utilizamos empresas
+          de publicidad de terceros para ofrecerle anuncios dirigidos basados en
+          su historial de navegación. Permitimos que redes publicitarias en
+          línea de terceros, empresas de redes sociales y otros servicios de
+          terceros recopilen información sobre su uso de nuestros Sitios,
+          incluidas nuestras aplicaciones móviles, con el tiempo para que puedan
+          reproducir o mostrar anuncios en nuestro Servicio, en otros sitios
+          web, aplicaciones o servicios que pueda utilizar y en otros
+          dispositivos que pueda utilizar. Por lo general, aunque no siempre, la
+          información utilizada para la publicidad basada en intereses se
+          recopila a través de tecnologías de seguimiento, como cookies, objetos
+          flash, balizas web, secuencias de comandos incrustadas, SDK para
+          móviles, tecnologías de identificación de ubicación, y tecnología
+          similar (colectivamente, “tecnologías de seguimiento”), que reconocen
+          el dispositivo que está utilizando y recopilan información, incluida
+          información de secuencias de clics, tipo de navegador, fecha y hora en
+          que visitó el sitio, el ID de dispositivo o AdID, la geolocalización
+          precisa y otra información. Podemos compartir un identificador de
+          cuenta común (como una dirección de correo electrónico o un ID de
+          usuario con
+          <em>hash</em>) con nuestros socios publicitarios externos para ayudar
+          a identificarle a través de dispositivos. Nosotros y nuestros socios
+          externos utilizamos esta información para hacer que los anuncios que
+          ve en línea sean más pertinentes para sus intereses, así como para
+          proporcionar servicios relacionados con la publicidad como informes,
+          atribución, análisis e investigación de mercado. También podemos
+          utilizar servicios proporcionados por terceros (como plataformas de
+          redes sociales) para ofrecerle anuncios dirigidos a usted y a otras
+          personas en dichas plataformas. Podemos hacerlo proporcionando una
+          versión con <em>hash</em> de su dirección de correo electrónico u otra
+          información al proveedor de la plataforma. Consulte Sus opciones de
+          publicidad a continuación para obtener más información sobre la
+          publicidad basada en intereses.
+        </p>
+        <p>&nbsp;</p>
+        <p>
+          <strong>Los widgets de redes sociales y publicidad&nbsp;</strong>
+        </p>
+        <p>
+          Nuestro Servicio puede incluir funciones de redes sociales, como el
+          botón Me gusta de Facebook, LinkedIn, Snapchat, Instagram, Twitter u
+          otros widgets. Estas empresas de redes sociales pueden reconocerlo y
+          recopilar información sobre su visita a nuestro Servicio, y pueden
+          dejar una cookie o emplear otras tecnologías de seguimiento. Sus
+          interacciones con estas funciones se rigen por las políticas de
+          privacidad de dichas empresas.&nbsp;
+        </p>
+        <p>
+          Le mostramos publicidad dirigida a usted a través de plataformas de
+          redes sociales, como Facebook, Twitter, Instagram, LinkedIn y otros
+          foros de redes sociales. Estas empresas tienen programas publicitarios
+          basados en intereses que nos permiten dirigir anuncios a usuarios que
+          han mostrado interés en nuestro Servicio mientras esos usuarios están
+          en la plataforma de redes sociales, o a grupos de otros usuarios que
+          comparten características similares, como intereses comerciales
+          probables y datos demográficos. Podemos compartir un identificador
+          único, como un ID de usuario o una dirección de correo electrónico con
+          <em>hash</em>, con estos proveedores de plataformas o pueden recopilar
+          información de los visitantes de nuestro Sitio web a través de un
+          píxel propio, a fin de enviarle publicidad dirigida a usted o a un
+          público personalizado en la plataforma de redes sociales. Estos
+          anuncios se rigen por las políticas de privacidad de las empresas de
+          redes sociales que los proporcionan. Si no desea recibir anuncios
+          dirigidos en sus redes sociales, puede que pueda ajustar sus
+          preferencias de publicidad a través de sus ajustes en esas redes.
+          Puede obtener más información sobre las preferencias de publicidad
+          haciendo clic en los enlaces que se proporcionan a continuación. Tenga
+          en cuenta que estos enlaces se proporcionan únicamente para su
+          comodidad y no controlamos el contenido o las funciones que puedan
+          estar disponibles en estos servicios de terceros.&nbsp;
+        </p>
+        <ol>
+          <li>
+            <strong>Facebook.</strong> Para obtener más información sobre sus
+            preferencias de publicidad en las empresas de Facebook, haga
+            clic&nbsp;<a
+              href="https://www.facebook.com/help/109378269482053"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
               >aquí</a
-            >.&nbsp;Si decide eliminar objetos Flash de nuestros Sitios, es
-            posible que no pueda acceder y utilizar todos o parte de los sitios
-            o beneficiarse de la información y los servicios ofrecidos.
-          </p>
-          <p>
-            <strong>Publicidad basada en intereses.</strong> Para obtener más
-            información sobre la publicidad basada en intereses y cómo puede
-            optar por no recibir publicidad basada en intereses, puede visitar
-            los recursos en línea de la Iniciativa de publicidad en red,
-            en&nbsp;<a
+            >.
+          </li>
+          <li>
+            <strong>Twitter.</strong> Para obtener más información sobre los
+            controles de privacidad para anuncios personalizados en Twitter,
+            haga clic&nbsp;<a
+              href="https://help.twitter.com/en/safety-and-security/privacy-controls-for-tailored-ads"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              >aquí</a
+            >.
+          </li>
+          <li>
+            <strong>LinkedIn.</strong> Para obtener más información sobre las
+            preferencias de publicidad en LinkedIn, haga clic&nbsp;<a
+              href="https://www.linkedin.com/psettings/advertising"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              >aquí</a
+            >.
+          </li>
+        </ol>
+        <p><strong>Enlace entre dispositivos</strong></p>
+        <p>
+          Nosotros, o nuestros socios externos, podemos vincular sus
+          dispositivos para que el contenido que vea en un dispositivo pueda
+          generar publicidad pertinente en otro dispositivo. Lo hacemos
+          recopilando información sobre cada dispositivo que utiliza cuando
+          inicia sesión en nuestro Servicio. También podemos trabajar con socios
+          externos que empleen tecnologías de seguimiento, o la aplicación de
+          herramientas de modelado estadístico, para determinar si dos o más
+          dispositivos están vinculados a un único usuario u hogar. Podemos
+          compartir un identificador de cuenta común (como una dirección de
+          correo electrónico o un ID de usuario) con socios publicitarios
+          externos para ayudar a reconocerlo entre dispositivos. Nosotros, y
+          nuestros socios, podemos utilizar esta vinculación entre dispositivos
+          para ofrecerle publicidad basada en intereses y otro contenido
+          personalizado en sus dispositivos, para realizar análisis y para medir
+          el rendimiento de nuestras campañas publicitarias.
+        </p>
+        <p><strong>Socios externos</strong>&nbsp;</p>
+        <p>
+          A continuación aparece una muestra de socios de servicios externos con
+          los que trabajamos para proporcionar servicios de vinculación o
+          publicidad entre dispositivos. Nos esforzaremos por actualizar esta
+          lista si o cuando trabajemos con nuevos socios que le ofrezcan
+          opciones de recopilación de su información, pero a medida que los
+          socios cambien y haya disponibles nuevas tecnologías, es probable que
+          esta lista cambie con el tiempo y que no siempre refleje nuestros
+          socios actuales.
+        </p>
+        <ul>
+          <li>
+            <u>Google Analytics y publicidad</u>. Utilizamos Google Analytics
+            para reconocerlo y vincular los dispositivos que utiliza cuando
+            visita nuestro Sitio o Servicio en su navegador o dispositivo móvil,
+            inicia sesión en su cuenta en nuestro Servicio o interactúa con
+            nosotros de cualquier otro modo. Compartimos un identificador único,
+            como un ID de usuario o una dirección de correo electrónico con
+            <em>hash</em>, con Google para facilitar el servicio. Google
+            Analytics nos permite comprender mejor cómo interactúan nuestros
+            usuarios con nuestro Servicio y personalizar los anuncios y
+            contenido para usted. Para obtener información sobre cómo recopila y
+            trata datos Google Analytics, así como sobre cómo puede controlar la
+            información enviada a Google, revise el sitio de Google “Cómo
+            utiliza Google los datos cuando utiliza los sitios o aplicaciones de
+            nuestros socios” ubicado
+            en&nbsp;www.google.com/policies/privacy/partners/. Puede obtener más
+            información sobre las cancelaciones de suscripción disponibles
+            actualmente de Google Analytics, incluido Google Analytics Browser
+            Ad-On aquí&nbsp;<a
+              href="https://tools.google.com/dlpage/gaoptout/"
+              rel="nofollow"
+              >https://tools.google.com/dlpage/gaoptout/</a
+            >.
+          </li>
+          <li>
+            También podemos utilizar ciertas formas de publicidad en pantalla y
+            otras funciones avanzadas a través de Google Analytics, como
+            Remarketing con Google Analytics, Google Display Network Impression
+            Reporting, DoubleClick Campaign Manager Integration y Google
+            Analytics Demographics and Interest Reporting. Estas funciones nos
+            permiten utilizar cookies de origen (como la cookie de Google
+            Analytics) y cookies de terceros (como la cookie de publicidad de
+            DoubleClick) u otras cookies de terceros juntas para informar,
+            optimizar y mostrar anuncios basados en sus visitas anteriores al
+            Servicio. Usted puede controlar sus preferencias de publicidad o
+            excluirse de ciertos productos de publicidad de Google visitando el
+            Administrador de preferencias de publicidad de Google, disponible
+            actualmente en&nbsp;<a
+              href="https://google.com/ads/preferences%20"
+              rel="nofollow"
+              >https://google.com/ads/preferences</a
+            >, o visitando los recursos en línea de NAI en&nbsp;<a
               href="http://www.networkadvertising.org/choices"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              >http://www.networkadvertising.org/choices&nbsp;</a
-            >, o los recursos de la DAA en&nbsp;<a
-              href="http://optout.aboutads.info/#!/"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              >www.aboutads.info/choices</a
-            >. Tenga en cuenta que estas opciones de exclusión no pueden afectar
-            a la publicidad en línea que no está basada en cookies.&nbsp;
-          </p>
-          <p>
-            <strong>Enlace entre dispositivos.</strong> Tenga en cuenta que si
-            opta por no recibir publicidad basada en intereses a través de los
-            recursos en línea de la NAI y la DAA, solo excluirá a un usuario de
-            recibir anuncios basados en intereses en ese navegador o dispositivo
-            específico, pero el usuario podrá seguir recibiendo anuncios basados
-            en intereses en sus otros dispositivos. Debe realizar la exclusión
-            voluntaria en cada navegador o dispositivo que utilice.
-          </p>
-          <p>
-            <strong>Publicidad móvil.</strong> También puede limitar la
-            publicidad basada en intereses a través de la configuración de su
-            dispositivo móvil seleccionando “limitar el seguimiento de anuncios”
-            (iOS) o “exclusión de anuncios basados en intereses” (Android).
-            También puede optar por excluirse de algunos –pero no todos– los
-            anuncios basados en intereses ofrecidos por redes de anuncios
-            móviles visitando&nbsp;<a
-              href="http://youradchoices.com/appchoices"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              >http://youradchoices.com/appchoices</a
-            >
-            y descargando la aplicación AppChoices para móviles. Usted puede
-            limitar el uso de los datos de ubicación con fines publicitarios
-            ajustando la configuración de sus servicios de ubicación en su
-            dispositivo móvil.&nbsp;
-          </p>
-          <p>
-            Tenga en cuenta que algunas de estas cancelaciones de suscripción
-            pueden no ser efectivas a menos que su navegador esté configurado
-            para aceptar cookies. Si elimina cookies, cambia la configuración de
-            su navegador, cambia de navegador u ordenador, o utiliza otro
-            sistema operativo, puede que tenga que volver a darse de baja.&nbsp;
-          </p>
-        </div>
-      </section >
-
-      <div class="terms-condition">
-        <span ></span
-        ><span >3/14/2023, 10:19:59 PM</span>
+              rel="nofollow"
+              >http://www.networkadvertising.org/choices</a
+            >.&nbsp;
+          </li>
+          <li>
+            Podemos utilizar servicios de coincidencia de datos como LiveRamp
+            para ayudarnos a medir la eficacia y el análisis de la publicidad y
+            para crear datos con fines publicitarios personalizados. Puede
+            averiguar cómo darse de baja de los servicios de LiveRamp
+            visitando&nbsp;<a
+              href="https://liveramp.com/opt_out."
+              rel="nofollow"
+              >https://liveramp.com/opt_out.</a
+            >&nbsp;
+          </li>
+          <li>
+            Podemos utilizar un socio externo Rokt para proporcionar ofertas
+            personalizadas de otras marcas en nuestros sitios. Puede obtener más
+            información sobre Rokt y aprender a darse de baja de las ofertas
+            personalizadas de la marca Rokt visitando&nbsp;<a
+              href="http://www.rokt.com/privacy-policy"
+              rel="nofollow"
+              >www.rokt.com/privacy-policy</a
+            >.&nbsp;
+          </li>
+        </ul>
       </div>
     </section>
+
+    <section class="terms-condition">
+      <h2>Sus opciones de publicidad</h2>
+      <div>
+        <p>
+          <strong
+            >Control de cookies, tecnologías de seguimiento y cookies
+            Flash.</strong
+          >
+          La mayoría de los navegadores le permiten ajustar la configuración de
+          su navegador para: (i) notificarle cuando recibe una cookie, lo que le
+          permite elegir si aceptarla o no; (ii) deshabilitar las cookies
+          existentes; o (iii) configurar su navegador para rechazar
+          automáticamente las cookies.&nbsp;
+        </p>
+        <p>
+          El bloqueo o eliminación de cookies puede afectar negativamente a su
+          experiencia de uso del Servicio, ya que algunas funciones y servicios
+          de nuestro Servicio pueden no funcionar correctamente. Según el
+          dispositivo móvil y sistema operativo que tenga, es posible que no
+          pueda eliminar o bloquear todas las tecnologías de seguimiento. Puede
+          configurar sus opciones de correo electrónico para evitar la descarga
+          automática de imágenes que puedan contener tecnologías que nos
+          permitan saber si ha visto o interactuado con nuestros correos
+          electrónicos.
+        </p>
+        <p>
+          La eliminación de cookies no elimina objetos de almacenamiento local
+          (Local Storage Objects, LSO) como objetos Flash y HTML5. Puede obtener
+          más información sobre los objetos Flash, incluido cómo gestionar la
+          configuración de privacidad y almacenamiento de las cookies Flash, en
+          el sitio web de Adobe o haciendo clic&nbsp;<a
+            href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html"
+            rel="nofollow"
+            >aquí</a
+          >.&nbsp;Si decide eliminar objetos Flash de nuestros Sitios, es
+          posible que no pueda acceder y utilizar todos o parte de los sitios o
+          beneficiarse de la información y los servicios ofrecidos.
+        </p>
+        <p>
+          <strong>Publicidad basada en intereses.</strong> Para obtener más
+          información sobre la publicidad basada en intereses y cómo puede optar
+          por no recibir publicidad basada en intereses, puede visitar los
+          recursos en línea de la Iniciativa de publicidad en red, en&nbsp;<a
+            href="http://www.networkadvertising.org/choices"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            >http://www.networkadvertising.org/choices&nbsp;</a
+          >, o los recursos de la DAA en&nbsp;<a
+            href="http://optout.aboutads.info/#!/"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            >www.aboutads.info/choices</a
+          >. Tenga en cuenta que estas opciones de exclusión no pueden afectar a
+          la publicidad en línea que no está basada en cookies.&nbsp;
+        </p>
+        <p>
+          <strong>Enlace entre dispositivos.</strong> Tenga en cuenta que si
+          opta por no recibir publicidad basada en intereses a través de los
+          recursos en línea de la NAI y la DAA, solo excluirá a un usuario de
+          recibir anuncios basados en intereses en ese navegador o dispositivo
+          específico, pero el usuario podrá seguir recibiendo anuncios basados
+          en intereses en sus otros dispositivos. Debe realizar la exclusión
+          voluntaria en cada navegador o dispositivo que utilice.
+        </p>
+        <p>
+          <strong>Publicidad móvil.</strong> También puede limitar la publicidad
+          basada en intereses a través de la configuración de su dispositivo
+          móvil seleccionando “limitar el seguimiento de anuncios” (iOS) o
+          “exclusión de anuncios basados en intereses” (Android). También puede
+          optar por excluirse de algunos –pero no todos– los anuncios basados en
+          intereses ofrecidos por redes de anuncios móviles visitando&nbsp;<a
+            href="http://youradchoices.com/appchoices"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            >http://youradchoices.com/appchoices</a
+          >
+          y descargando la aplicación AppChoices para móviles. Usted puede
+          limitar el uso de los datos de ubicación con fines publicitarios
+          ajustando la configuración de sus servicios de ubicación en su
+          dispositivo móvil.&nbsp;
+        </p>
+        <p>
+          Tenga en cuenta que algunas de estas cancelaciones de suscripción
+          pueden no ser efectivas a menos que su navegador esté configurado para
+          aceptar cookies. Si elimina cookies, cambia la configuración de su
+          navegador, cambia de navegador u ordenador, o utiliza otro sistema
+          operativo, puede que tenga que volver a darse de baja.&nbsp;
+        </p>
+      </div>
+    </section>
+
+    <div class="terms-condition">
+      <span>3/14/2023, 10:19:59 PM</span>
+    </div>
 
     <footer>
       <div class="footer_main">
@@ -507,23 +470,34 @@
         <div class="footer_tag">
           <h2>Contact</h2>
           <div class="contact-info">
-            <i class="ti-mobile"></i
-            ><a class="contact-tel" href="tel:0828122876">+84 828 122 876</a>
+            <i class="ti-mobile"></i>
+            <a class="contact-tel" href="tel:0828122876">+84 828 122 876</a>
           </div>
           <div class="contact-info">
-            <i class="ti-mobile"></i
-            ><a class="contact-tel" href="tel:0828122876">+84 828 122 876</a>
+            <i class="ti-mobile"></i>
+            <a class="contact-tel" href="tel:0828122876">+84 828 122 876</a>
           </div>
           <div class="contact-info">
-            <i class="ti-email"></i
-            ><a class="contact-email" href="mailto:2151120043@ut.edu.vn"
+            <i class="ti-mobile"></i>
+            <a class="contact-tel" href="tel:0828122876">+84 828 122 876</a>
+          </div>
+          <div class="contact-info">
+            <i class="ti-email"></i>
+            <a class="contact-email" href="mailto:2151120043@ut.edu.vn"
               >2151120043@ut.edu.vn</a
             >
           </div>
           <div class="contact-info">
             <i class="ti-email"></i>
             <a class="contact-email" href="mailto:2151120043@ut.edu.vn"
-              >2151120043@ut.edu.vn</a
+              >2151120044@ut.edu.vn</a
+            >
+          </div>
+
+          <div class="contact-info">
+            <i class="ti-email"></i>
+            <a class="contact-email" href="mailto:2151120047@ut.edu.vn"
+              >2151120047@ut.edu.vn</a
             >
           </div>
         </div>
@@ -549,12 +523,15 @@
       </div>
 
       <p class="end">
-        Design by<span style="text-transform: uppercase; font-weight: bold"
-          ><i class="fa-solid fa-face-grin"></i>Tran Thien Nhan & Tran Tien
-          Dat</span
+        Design by<span
+          ><i class="fa-solid fa-face-grin"></i> swift snack team</span
         >
       </p>
     </footer>
   </body>
-  <script  src="./index.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script src="../../index.js"></script>
 </html>
