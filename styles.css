@@ -577,7 +577,7 @@ body {
 }
 
 .meal {
-  background-color: var(--yellow-500);
+  background-color: var(--yellow-50);
   box-shadow: var(--shadow-medium);
   border-radius: var(--border-lg);
   overflow: hidden;
