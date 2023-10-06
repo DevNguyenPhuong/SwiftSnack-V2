@@ -1,15 +1,14 @@
+@import url("../../global.css");
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  background-image: url("/images/background/bg1.jpg");
 }
 
 .container {
-  width: 800px;
+  width: 80rem;
   margin: 0 auto;
-  background-image: url("/images/background/bg1.jpg");
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  box-shadow: var(--shadow-heavy);
 }
 
 table {
@@ -21,10 +20,9 @@ table {
 
 caption {
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 3.2rem;
   text-transform: uppercase;
-  padding: 10px;
-  /* background-color: #e6e6e6; */
+  color: var(--red-500);
 }
 
 th,
@@ -40,13 +38,9 @@ td:first-child {
 }
 
 th:nth-child(2),
-td:nth-child(2),
 th:nth-child(3),
-td:nth-child(3),
 th:nth-child(4),
-td:nth-child(4),
-th:nth-child(5),
-td:nth-child(5) {
+th:nth-child(5) {
   width: 20%;
 }
 
@@ -107,7 +101,7 @@ img {
   -webkit-transform: scale(1.05) translateZ(0);
   -moz-transform: scale(1.05) translateZ(0);
   transform: scale(1.05) translateZ(0);
-  transition: opacity 0.2s ease-in-out, transform 0.7s, -webkit-transform 0.7s,
+  transition: opacity 0.2s ease-in-out, transform 0.7s -webkit-transform 0.7s,
     -moz-transform 0.7s;
   background-color: #f6422d;
   color: #d6d3d1;
