@@ -1,4 +1,4 @@
-Deploy: https://swift-snack.vercel.app/
+Deploy: https://swiftsnack.netlify.app/
 
 ## Những thay đổi trong code sẽ được ghi lại ở đây.
 
