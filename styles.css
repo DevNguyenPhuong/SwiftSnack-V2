@@ -678,8 +678,8 @@
 }
 
 .team .team_box .profile {
-  width: 26rem;
-  height: 26rem;
+  width: 24rem;
+  height: 24rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -691,12 +691,12 @@
 
 .team .team_box .profile:hover {
   border-radius: var(--border-lg);
-  height: 320px;
+  width: 42rem;
 }
 
 .team .team_box .profile img {
-  width: 21rem;
-  height: 21em;
+  width: 22rem;
+  height: 22em;
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
@@ -706,9 +706,9 @@
   transition: 0.4s;
 }
 
-.profile:hover img {
+.team .team_box .profile:hover img {
   border-radius: var(--border-lg);
-  margin-top: -23rem;
+  margin-right: -21rem;
 }
 
 .profile .info {
@@ -719,7 +719,7 @@
 }
 
 .profile:hover .info {
-  top: 50%;
+  right: 50%;
 }
 
 .profile .info .name {
